@@ -40,7 +40,7 @@ img {
 
 /* general */
 body {
-    padding: 5em 16em;
+    padding: 5em 14em;
     display:grid;
     place-content: center;
     min-height: 100vh;
@@ -72,11 +72,12 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+   
 }
 
 /* componentns */
 .intro-slogan {
-    margin-right: 1.5em;
+    margin-right: 2em;
     font-family: var(--ff-primary);
     font-size: var(--fs-900);
     font-weight: var(--fw-bold);
@@ -96,6 +97,7 @@ body {
 /* RATINGS */
 
 .list-rating { 
+    margin-top: 1em;
     display: grid;
     grid-row:1fr 1fr 1fr;
     justify-items:  right;
@@ -103,17 +105,13 @@ body {
 }
 
 .rating-card {
-    /* margin: 1.5em 0; */
-    margin: 1.5em 8em 1.5em 0;
+    margin: 0.5em 8em 0.5em 0;
     display: grid;
     grid-template-columns: 1fr 4fr;
     justify-content: center;
-    /* justify-items: end; */
-    /* justify-content:right; */
     align-items: center;
     column-gap: 1em;
-    /* max-width: 29vw; */
-    max-width: 450px;
+    width: 450px;
     height: 3.5rem;
     background-color: var(--clr-secondary-200);
     border-radius: 0.5rem;
@@ -157,7 +155,7 @@ li > .rating-star {
 }
 
 .user-card {
-    padding:2.5em;
+    padding:2.5em 3em;
     height: 240px;
     color: var(--clr-secondary-100);
     background-color: var(--clr-primary-900);
@@ -196,6 +194,7 @@ li > .rating-star {
     margin: 2em 0 0 0;
     font-size: var(--fs-500);
     line-height: 1.6;
+    letter-spacing: 0.5px;
 }
 
 .user-card + .user-card {
@@ -208,14 +207,14 @@ li > .rating-star {
 
 @media (max-width:1400px) {
     body {
-        padding: 5em 13em;
+        padding: 5em 9em;
         
     }
 }
 
 @media (max-width:1320px) {
     body {
-        padding: 5em 9em; 
+        padding: 5em 6em; 
     }
 }
 
@@ -248,11 +247,10 @@ li > .rating-star {
         margin-right: 0;
     }
 
-
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     body {
         padding: 4em 1.5em;
         background-image: url("../images/bg-pattern-top-desktop.svg");
@@ -273,9 +271,7 @@ li > .rating-star {
     }
     .intro-text {
         margin: 2em 0;
-        letter-spacing: 0.5px;
-     
-       
+        letter-spacing: 0.5px; 
     }
 
     /* RATINGS */
@@ -284,7 +280,6 @@ li > .rating-star {
         display: grid;
         grid-row:1fr 1fr 1fr;
         justify-items:  center;
-    
     }
 
     .rating-card {
